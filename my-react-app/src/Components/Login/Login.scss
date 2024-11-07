@@ -1,0 +1,85 @@
+/* Login.scss */
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f9fc; /* Svetla pozadina, slično Register stranici */
+  }
+  
+  .login-form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px; /* Zaobljeni ivici */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Blaga senka */
+    width: 100%;
+    max-width: 450px; /* Maksimalna širina forme */
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    margin-bottom: 6px;
+  }
+  
+  .input-field {
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f1f3f8;
+    color: #333;
+    outline: none;
+    transition: border 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+  
+    &::placeholder {
+      color: #aaa;
+    }
+  
+    &:focus {
+      border-color: #4a90e2; /* Plavi okvir kada je input fokusiran */
+      background-color: #ffffff;
+    }
+  }
+  
+  .submit-btn {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2; /* Plava boja za dugme */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+    &:hover {
+      background-color: #357ab7; /* Tamnija plava pri hoveru */
+      transform: translateY(-2px); /* Mala animacija za hover */
+    }
+  
+    &:active {
+      background-color: #285c8a; /* Još tamnija plava kada je dugme kliknuto */
+      transform: translateY(0); /* Resetuje poziciju nakon klika */
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }

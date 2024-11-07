@@ -1,0 +1,46 @@
+/* Welcome.scss */
+
+.welcome-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f9fc; /* Svetla pozadina, slična Register i Login stranici */
+  }
+  
+  .welcome-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px; /* Zaobljeni ivici */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Blaga senka */
+    width: 100%;
+    max-width: 600px; /* Maksimalna širina */
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #357ab7; /* Tamnija plava pri hoveru */
+    }
+  }
